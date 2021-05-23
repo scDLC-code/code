@@ -8,7 +8,7 @@ __Authors:__ Yan Zhou, Bin Yang, Tiejun Tong, Niansheng Tang
 
 ## Description
 
-`slapnap` is a Docker image for developing cross-validation-based ensemble predictors of neutralization sensitivity/resistance using HIV sequences from the [CATNAP database](http://www.hiv.lanl.gov/). The image provides an automated tool for reading the data from the online database, compiling analytic data sets, developing prediction models, and summarizing results.
+`scDLC` is a deep learning classifier (scDLC) for large sample scRNA-seq data, based on the long short-term memory recurrent neural networks (LSTMs). This classifier does not require a prior knowledge on the scRNA-seq data distribution and it is a scale invariant method which does not require a normalization procedure for scRNA-seq data.
 
 ---
 
