@@ -12,6 +12,7 @@ __Authors:__ Yan Zhou, Bin Yang, Tiejun Tong, Niansheng Tang
 `scDLC` is a deep learning classifier (scDLC) for large sample scRNA-seq data, based on the long short-term memory recurrent neural networks (LSTMs). This classifier does not require a prior knowledge on the scRNA-seq data distribution and it is a scale invariant method which does not require a normalization procedure for scRNA-seq data.
 
 <img src="img/scDLC_framework.png" height="35%" width="35%">
+
 ---
 
 ## Requirements
@@ -38,9 +39,7 @@ It is required to install the following dependencies in order to be able to run 
   R_HOME C:\program files\r\r-3.0.2  
   R_USER C:\Users\"your user name"\Anaconda\Lib\site-packages\rpy2
   ```
-
-
-
+  
 ---
 
 ## Usage
