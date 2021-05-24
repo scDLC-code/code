@@ -1,6 +1,6 @@
 # `scDLC`
 
-> a deep learning framework to classify large  sample single-cell RNA-seq data
+> a deep learning framework to classify large  sample single-cell RNA-seq data.
 
 __Authors:__ Yan Zhou, Bin Yang, Tiejun Tong, Niansheng Tang
 
@@ -22,6 +22,21 @@ It is required to install the following dependencies in order to be able to run 
 - [python 3](https://www.python.org/downloads/)  
   [sklearn](https://pypi.org/project/sklearn/0.0/)，[numpy 1.18.5](https://pypi.org/project/numpy/1.18.5/)，[pandas 1.1.0](https://pypi.org/project/pandas/1.1.0/)，[tensorflow 1.15.0](https://pypi.org/project/tensorflow/1.15.0/)，[rpy2 2.9.5](https://pypi.org/project/rpy2/2.9.5/)
   
+  In order to enable rpy2 package to be successfully imported in python, you need to add the following variables to the environment variables.  
+  
+  Open the environment variable setting interface:
+  ```
+  computer-> property -> advanced and system setting -> environment variables
+  ```
+  In the user variable field, add the following R path to variables path:
+  ```
+  C:\Program Files\R\R-3.0.2\bin\x64 (my system is windows 64bit) 
+  ```
+  In the system variable field add two new variables:
+  ```
+  R_HOME C:\program files\r\r-3.0.2  
+  R_USER C:\Users\"your user name"\Anaconda\Lib\site-packages\rpy2
+  ```
 
 
 
