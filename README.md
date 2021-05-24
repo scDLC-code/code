@@ -11,6 +11,7 @@ __Authors:__ Yan Zhou, Bin Yang, Tiejun Tong, Niansheng Tang
 
 `scDLC` is a deep learning classifier (scDLC) for large sample scRNA-seq data, based on the long short-term memory recurrent neural networks (LSTMs). This classifier does not require a prior knowledge on the scRNA-seq data distribution and it is a scale invariant method which does not require a normalization procedure for scRNA-seq data.
 
+<img src="img/Ground truth_PCoA_plot.png" height="35%" width="35%">
 ---
 
 ## Requirements
