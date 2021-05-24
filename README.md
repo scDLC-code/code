@@ -16,10 +16,13 @@ __Authors:__ Yan Zhou, Bin Yang, Tiejun Tong, Niansheng Tang
 
 It is required to install the following dependencies in order to be able to run the code of scDLC
 
+- [Anaconda3](https://www.anaconda.com/products/individual)
 
 - [R>=3.5.3](https://cran.r-project.org/)
 
 - [python 3](https://www.python.org/downloads/)
+ 
+  [sklearn](https://pypi.org/project/sklearn/0.0/)
 
   [numpy 1.18.5](https://pypi.org/project/numpy/1.18.5/)
   
@@ -29,7 +32,7 @@ It is required to install the following dependencies in order to be able to run 
   
   [rpy2 2.9.5](https://pypi.org/project/rpy2/2.9.5/)
   
-  [sklearn](https://pypi.org/project/sklearn/0.0/)
+
 
 
 ---
