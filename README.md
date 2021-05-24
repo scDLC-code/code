@@ -12,6 +12,28 @@ __Authors:__ Yan Zhou, Bin Yang, Tiejun Tong, Niansheng Tang
 
 ---
 
+## Requirements
+
+It is required to install the following dependencies in order to be able to run the code of scDLC
+
+
+- [R>=3.5.3](https://cran.r-project.org/)
+
+- [python 3](https://www.python.org/downloads/)
+
+  [numpy 1.18.5](https://pypi.org/project/numpy/1.18.5/)
+  
+  [pandas 1.1.0](https://pypi.org/project/pandas/1.1.0/)
+  
+  [tensorflow 1.15.0](https://pypi.org/project/tensorflow/1.15.0/)
+  
+  [rpy2 2.9.5](https://pypi.org/project/rpy2/2.9.5/)
+  
+  [sklearn](https://pypi.org/project/sklearn/0.0/)
+
+
+---
+
 ## Usage
 
 This GitHub repository contains the source code needed to build the `slapnap` docker image. The repository is also set up for continuous integration via Travis-CI, with built images found on [DockerHub](https://cloud.docker.com/u/slapnap/repository/docker/slapnap/slapnap). See the [Docker website](https://docs.docker.com/docker-for-windows/install/) for installation instructions.
