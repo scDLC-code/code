@@ -71,12 +71,10 @@ This GitHub repository contains the source code needed to build the `scDLC` clas
 ```
 setwd("C:\\Users\\your user name\\Desktop\\scDLC")
 data <- read.table("datasetname.csv",sep=',')
-
 ```
 
 Here is is a description of some of the important parameters in the SCDLC codeï¼š
 
-```
 * `num_classes`: The number of classes in the dataset
 * `num_steps`: Number of genes in the training sample
 * `batch_size`: training sample size in one batch
@@ -84,7 +82,7 @@ Here is is a description of some of the important parameters in the SCDLC codeï¼
 * `num_layers`: number of lstm layers
 * `n_epoch`: Number of training rounds
 * `train_keep_prob`: The keep rate of neuron node during training
-```
+
 
 Open command window in the SCDLC folder and execute the following command to train the scDLC classifier:
 
@@ -102,7 +100,7 @@ python scDLC_train.py \
 ## Issues
 
 If you encounter any bugs or have any specific feature requests, please [file an
-issue](https://github.com/benkeser/slapnap/issues).
+issue](https://github.com/scDLC-code/scDLC/issues).
 
 ---
 
