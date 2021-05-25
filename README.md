@@ -84,7 +84,7 @@ Here is a description of some of the important parameters in the `scDLC` mode：
 * `train_keep_prob`: The keep rate of neuron node during training
 
 
-Open command window in the scDLC folder and execute the following command to train the `scDLC` classifier:
+Open command window in the scDLC folder path and execute the following command to train the `scDLC` classifier:
 
 ```
 python scDLC_train.py \
