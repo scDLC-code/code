@@ -66,14 +66,14 @@ It contains nine classes, each with 110, 51, 236, 872, 214, 120, 130, 70 and 92 
 
 ## Usage
 
-This GitHub repository contains the source code needed to build the `scDLC` classifier. selectgene.R is the code used to select differentially expressed gene. Before training the SCDLC classifier, you need set the path of the scDLC folder to the default working directory and to modify the dataset name which will be read in selectgene.R:
+This GitHub repository contains the source code needed to build the `scDLC` classifier. selectgene.R is the code used to select differentially expressed gene. Before training the `scDLC` classifier, you need set the path of the scDLC folder to the default working directory and to modify the dataset name which will be read in selectgene.R:
 
 ```
 setwd("C:\\Users\\your user name\\Desktop\\scDLC")
 data <- read.table("datasetname.csv",sep=',')
 ```
 
-Here is is a description of some of the important parameters in the scDLC mode：
+Here is is a description of some of the important parameters in the `scDLC` mode：
 
 * `num_classes`: The number of classes in the dataset
 * `num_steps`: Number of genes in the training sample
@@ -84,7 +84,7 @@ Here is is a description of some of the important parameters in the scDLC mode�
 * `train_keep_prob`: The keep rate of neuron node during training
 
 
-Open command window in the scDLC folder and execute the following command to train the scDLC classifier:
+Open command window in the scDLC folder and execute the following command to train the `scDLC` classifier:
 
 ```
 python scDLC_train.py \
