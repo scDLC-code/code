@@ -44,6 +44,17 @@ It is required to install the following dependencies in order to be able to run 
   
 ---
 
+## Data
+
+Four scRNA-seq datasets are from National Center for Biotechnology Information Search database [(NCBI](https://www.ncbi.nlm.nih.gov/)
+The first dataset GSE99933 has two classes, including 384 samples recombining at E12.5 and 384 samples recombining 
+at E13.5. The second dataset GSE123454 includes 463 samples from single nuclei and 463 samples from matched single cells with measurements on 42003 genes. 
+The third dataset GSE113069 contains three classes, each with 345, 422, 423 samples, respectively. The fourth
+dataset GSE84133 (Baron1) contains all major cell groups from the first human donor, excluding those with less than 20 cells. 
+It contains nine classes, each with 110, 51, 236, 872, 214, 120, 130, 70 and 92 samples.
+
+---
+
 ## Usage
 
 This GitHub repository contains the source code needed to build the `slapnap` docker image. The repository is also set up for continuous integration via Travis-CI, with built images found on [DockerHub](https://cloud.docker.com/u/slapnap/repository/docker/slapnap/slapnap). See the [Docker website](https://docs.docker.com/docker-for-windows/install/) for installation instructions.
