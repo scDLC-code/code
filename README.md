@@ -73,7 +73,7 @@ setwd("C:\\Users\\your user name\\Desktop\\scDLC")
 data <- read.table("datasetname.csv",sep=',')
 ```
 
-Here is is a description of some of the important parameters in the `scDLC` mode：
+Here is a description of some of the important parameters in the `scDLC` mode：
 
 * `num_classes`: The number of classes in the dataset
 * `num_steps`: Number of genes in the training sample
