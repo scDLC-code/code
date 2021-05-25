@@ -73,7 +73,7 @@ setwd("C:\\Users\\your user name\\Desktop\\scDLC")
 data <- read.table("datasetname.csv",sep=',')
 ```
 
-Here is is a description of some of the important parameters in the SCDLC code：
+Here is is a description of some of the important parameters in the scDLC mode：
 
 * `num_classes`: The number of classes in the dataset
 * `num_steps`: Number of genes in the training sample
@@ -84,7 +84,7 @@ Here is is a description of some of the important parameters in the SCDLC code�
 * `train_keep_prob`: The keep rate of neuron node during training
 
 
-Open command window in the SCDLC folder and execute the following command to train the scDLC classifier:
+Open command window in the scDLC folder and execute the following command to train the scDLC classifier:
 
 ```
 python scDLC_train.py \
