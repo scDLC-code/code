@@ -66,31 +66,38 @@ It contains nine classes, each with 110, 51, 236, 872, 214, 120, 130, 70 and 92 
 
 ## Usage
 
-This GitHub repository contains the source code needed to build the `slapnap` docker image. The repository is also set up for continuous integration via Travis-CI, with built images found on [DockerHub](https://cloud.docker.com/u/slapnap/repository/docker/slapnap/slapnap). See the [Docker website](https://docs.docker.com/docker-for-windows/install/) for installation instructions.
+This GitHub repository contains the source code needed to build the `scDLC` classifier. selectgene.R is the code used to select differentially expressed gene. Before training the SCDLC classifier, you need set the path of the scDLC folder to the default working directory and to modify the dataset name which will be read in selectgene.R:
 
-From a terminal the image can be downloaded from DockerHub via the command line.
+```
+setwd("C:\\Users\\your user name\\Desktop\\scDLC")
+data <- read.table("datasetname.csv",sep=',')
 
-```{bash, eval = FALSE}
-docker pull slapnap/slapnap
 ```
 
-`slapnap` is executed using the docker run command. For example, the following code will instruct `slapnap` to create and evaluate a neutralization predictor for the bnAb combination VRC07-523-LS and PGT121:
+Here is is a description of some of the important parameters in the SCDLC code：
 
-```{bash, eval = FALSE}
-docker run \
-  -v path/to/local/save/directory:/home/output/ \
-  -e nab="VRC07-523-LS;PGT121" \
-  -e outcomes=”ic50;estsens” \
-  -e combination_method="additive" \
-  -e learners=”rf;lasso” \
-  -e importance_grp=”marg” \
-  -e importance_ind=”pred” \
-  slapnap/slapnap:latest
+```
+* `num_classes`: The number of classes in the dataset
+* `num_steps`: Number of genes in the training sample
+* `batch_size`: training sample size in one batch
+* `lstm_size`: size of hidden state of lstm
+* `num_layers`: number of lstm layers
+* `n_epoch`: Number of training rounds
+* `train_keep_prob`: The keep rate of neuron node during training
 ```
 
-The `–v` tag specifies the directory on the user’s computer where the report will be saved, and `path/to/local/save/directory` should be replaced with the desired target directory.  Options for the analysis are passed to the container via the `-e` tag; these options include the bnAbs to include in the analysis (`nab`), the neutralization outcomes of interest (`outcomes`), the method for predicting combination neutralization (`combination_method`), the learners to use in the analysis (`learners`), and the types of variable importance to compute (`importance_grp`, for groups of variables; `importance_ind`, for individual variables). Other output (e.g., the formatted analysis dataset and the fitted learners) can be requested via the `return` option. A full list of options and their syntax are available in the [`slapnap` documentation](https://benkeser.github.io/slapnap/3-sec-runningcontainer.html).
+Open command window in the SCDLC folder and execute the following command to train the scDLC classifier:
 
-Complete documentation is available [here](https://benkeser.github.io/slapnap/).
+```
+python scDLC_train.py \
+--num_steps=100 \
+--batch_size=11 \
+--lstm_size=64 \
+--num_layers=2 \
+--n_epoch=30 \
+--train_keep_prob=0.3 \
+ 
+```
 
 ## Issues
 
