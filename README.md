@@ -53,6 +53,15 @@ The third dataset [GSE113069](https://github.com/scDLC-code/scDLC/releases/tag/D
 dataset [GSE84133 (Baron1)](https://github.com/scDLC-code/scDLC/releases/tag/Data) contains all major cell groups from the first human donor, excluding those with less than 20 cells. 
 It contains nine classes, each with 110, 51, 236, 872, 214, 120, 130, 70 and 92 samples.
 
+```
+                            Datasets          |  Sample size   |  No. of classes   |  No. of genes  
+                            ------------------|----------------|-------------------|---------------
+                            GSE99933          |       768      |         2         |     23420       
+                            GSE123454         |       926      |         2         |     42003        
+                            GSE113069         |       1190     |         3         |     23218       
+                            GSE84133(Baron1)  |       1895     |         9         |     20126       
+```
+
 ---
 
 ## Usage
