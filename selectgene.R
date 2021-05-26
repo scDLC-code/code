@@ -83,4 +83,4 @@ gene_no = gene_no_list
 ID <- sorttrainx[1:gene_no]
 
 dat <- rbind(data2[ID,],ylabel)
-write.table(data,"data.csv",row.names = FALSE,col.names = FALSE,sep=',')
+write.table(dat,"data.csv",row.names = FALSE,col.names = FALSE,sep=',')
